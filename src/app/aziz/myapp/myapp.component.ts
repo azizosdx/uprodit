@@ -12,7 +12,7 @@ export class MyappComponent implements OnInit {
 
   data : any
 
-  hama="azizos"
+
 
   constructor() {
     }
