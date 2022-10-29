@@ -19,4 +19,4 @@ const generateSignature = ( uri: string) => {
 
 export default generateSignature;
 
-console.log('sdfhdfjhsfd')
+

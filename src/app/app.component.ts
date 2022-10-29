@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import generateSignature from 'src/sigiature/genrates';
+import generateSignature from 'src/service/genrates';
+import {FormControl, Validators} from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-root',
@@ -8,6 +11,8 @@ import generateSignature from 'src/sigiature/genrates';
 })
 export class AppComponent {
   title = 'uprodit';
+
+
+
 }
 
-console.log(generateSignature('https://api.uprodit.com/v2/profile/personal/en/51'))
