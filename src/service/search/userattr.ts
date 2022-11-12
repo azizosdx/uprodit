@@ -49,3 +49,4 @@ export interface Skill {
   stars: number;
   percentage: null | string;
 }
+

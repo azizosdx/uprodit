@@ -1,0 +1,27 @@
+.Usercard {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.User-header-image {
+
+  background-size: cover;
+}
+
+.image{
+  padding-bottom: 10px;
+
+}
+
+.title{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  padding: 10px;
+  font-size:xx-large;
+  text-align: center;
+}
+
+.specs{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+  font-size: larger;
+}

@@ -1,0 +1,17 @@
+<mat-card class="Usercard" >
+
+  <img mat-card-image class="image" [src]="taswira" alt="">
+
+  <mat-card-header>
+    <div mat-card-avatar class="User-header-image"></div>
+    <mat-card-title class="title">{{User.denomination }}</mat-card-title>
+    <mat-card-subtitle></mat-card-subtitle>
+  </mat-card-header>
+  spécialiseé en :
+  <mat-card-content >
+    <p class="specs">
+        {{User.specialities.join(" / ")}}
+    </p>
+  </mat-card-content>
+
+</mat-card>

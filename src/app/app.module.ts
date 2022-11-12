@@ -7,7 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
 import {MatInputModule} from '@angular/material/input';
-import { MyappComponent } from './aziz/myapp/myapp.component';
+import { MyappComponent } from './aziz/HomePage/myapp.component';
+import {MatCardModule} from '@angular/material/card';
+import { UserCardComponent } from './aziz/Usercard/user-card/user-card.component';
 
 
 
@@ -16,14 +18,15 @@ import { MyappComponent } from './aziz/myapp/myapp.component';
   declarations: [
     AppComponent,
     MyappComponent,
+    UserCardComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatInputModule
-
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
