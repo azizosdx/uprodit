@@ -19,13 +19,10 @@ export class UserCardComponent implements OnInit {
   constructor() { }
 
   async ngOnInit(): Promise<void> {
-    this.taswira=await this.img(this.photoid(this.User))
+    this.taswira=await this.img(this.User.image_id)
   }
 
 
-    photoid = (User:UpUser)=>{
-        return User.image_id;
-    }
 
     parseImageToDataUrl = (image: GetImageResponse) => {
       return `data:${image.mimeType};base64,${image.b64Content}`;

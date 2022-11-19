@@ -1,23 +1,25 @@
 .Usercard {
-  max-width: 400px;
-  border-radius: 10px;
+  width: 300px;
+  border-radius: 20px;
+  text-align: center;
+
 }
-
-.User-header-image {
-
-  background-size: cover;
-}
-
-.image{
+.image {
   padding-bottom: 10px;
-
 }
+
+img{
+  margin-bottom: 1px;
+
+  height: 200px;
+  width: 300px;
+}
+
 
 .title{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   padding: 10px;
   font-size:xx-large;
-  text-align: center;
 }
 
 .specs{
@@ -25,3 +27,6 @@
   padding: 10px;
   font-size: larger;
 }
+ a{
+  text-decoration: none;
+ }

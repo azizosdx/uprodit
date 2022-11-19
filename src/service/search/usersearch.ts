@@ -6,19 +6,19 @@ import { SearchQS, UpUser } from "./userattr";
     const getUsers=async (
       querySettings : SearchQS={
           startIndex:0,
-          maxResults:20,
+          maxResults:15,
       }):Promise<UpUser[]>=>{
 
           let endpoint=endpoints.search;
 
-          console.log(Object.entries(querySettings))
 
           Object.entries(querySettings).forEach(([key,value])=>(endpoint += (key == "startIndex" || (key && value)) ? `&${key}=${value}` : ''))
 
           const resp=await Client.get<UpUser[]>(endpoint)
+          console.log(resp.data)
           return resp.data
 
     }
 
-   export default getUsers
+export default getUsers
 

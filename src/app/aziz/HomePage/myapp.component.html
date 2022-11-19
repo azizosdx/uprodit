@@ -1,8 +1,21 @@
-<div *ngFor="let data of datas" >
-
-<app-user-card [User]="data"></app-user-card>
-
+<div >
+  <mat-form-field appearance="fill" class="bar">
+    <mat-label>search freelancer </mat-label>
+    <input matInput [(ngModel)]="searchText" (keyup)="onSearch($event)" />
+    <mat-icon matPrefix>search</mat-icon>
+  </mat-form-field>
 </div>
 
+
+
+<mat-grid-list
+   gutterSize="16"
+   cols="4"
+  >
+  <mat-grid-tile *ngFor="let data of datas " >
+    <app-user-card [User]="data"></app-user-card>
+  </mat-grid-tile>
+
+</mat-grid-list>
 
 

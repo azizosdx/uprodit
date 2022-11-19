@@ -10,9 +10,10 @@ import {MatInputModule} from '@angular/material/input';
 import { MyappComponent } from './aziz/HomePage/myapp.component';
 import {MatCardModule} from '@angular/material/card';
 import { UserCardComponent } from './aziz/Usercard/user-card/user-card.component';
-
-
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,11 @@ import { UserCardComponent } from './aziz/Usercard/user-card/user-card.component
     AppRoutingModule,
     HttpClientModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatGridListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
